@@ -1,0 +1,9 @@
+version: '3'
+services:
+  sfs:
+    image: sfs:1.4
+    ports:
+      - 2036:9000
+    volumes:
+      - ./sfs:/SFS_v1.4/sunat_archivos/sfs
+      - ./bd:/SFS_v1.4/bd
